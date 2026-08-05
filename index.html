@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>A Little Surprise For You</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Mali:wght@300;400;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+
+    background:#000;
+    color:white;
+
+    width:100vw;
+    height:100vh;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    overflow:hidden;
+
+    font-family:"Mali",cursive;
+
+}
+
+#container{
+
+    text-align:center;
+
+    opacity:0;
+
+    animation:fadeIn 2s forwards;
+
+    animation-delay:2s;
+
+}
+
+h1{
+
+    font-size:40px;
+    font-weight:400;
+    margin-bottom:20px;
+
+}
+
+p{
+
+    font-size:22px;
+
+    opacity:.8;
+
+}
+
+button{
+
+    margin-top:60px;
+
+    padding:15px 35px;
+
+    font-size:20px;
+
+    border:none;
+
+    border-radius:40px;
+
+    cursor:pointer;
+
+    background:white;
+
+    color:black;
+
+    transition:.3s;
+
+}
+
+button:hover{
+
+    transform:scale(1.05);
+
+}
+
+@keyframes fadeIn{
+
+from{
+
+opacity:0;
+
+}
+
+to{
+
+opacity:1;
+
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div id="container">
+
+<h1>มีบางอย่าง...</h1>
+
+<p>ที่อยากให้เธออ่าน</p>
+
+<button onclick="start()">
+
+💌 เปิดจดหมาย
+
+</button>
+
+</div>
+
+<script>
+
+function start(){
+
+window.open(
+"https://youtu.be/LXIEBWnqiBA?si=hGPa131YOp3Ku7U1",
+"_blank"
+);
+
+alert("เปิดเพลงแล้ว กลับมาที่หน้านี้นะ ❤️");
+
+}
+
+</script>
+
+</body>
+</html>
